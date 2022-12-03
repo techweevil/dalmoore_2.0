@@ -55,7 +55,7 @@ const Navbar = () => {
       <div className="md:hidden text-black inline text-[1.6em] font-[700]">
         <motion.button
           onClick={() => setIsOpen(!isOpen)}
-          className="text-red-500"
+          className="text-primary"
         >
           <motion.div
             initial={{ rotate: 0 }}
@@ -81,6 +81,8 @@ const Navbar = () => {
 
         <a
           href="https://online.fliphtml5.com/opehn/bgqq/#p=1"
+          target="_blank"
+          rel="noreferrer"
           className="text-tertiary font-[600]"
         >
           GET THE DALMOOORE BRONCHURE!{" "}
@@ -90,12 +92,11 @@ const Navbar = () => {
       {isOpen && (
         <motion.div
           initial={{ height: 0 }}
-          animate={{ height: "80%" }}
+          animate={{ height: "100%" }}
           transition={{ duration: 0.6 }}
-          exit={{ height: 0 }}
-          className=" z-[10]  md:hidden text-center absolute top-[5.5em] left-0 w-full "
+          className=" z-[99]  md:hidden text-center absolute top-[5.5em] left-0 w-full h-full"
         >
-          <div className="w-[80%] m-auto bg-white h-full py-[2rem] font-[500] font-monts  border-t-[5px] border-red-500">
+          <div className="w-[80%] m-auto bg-white py-[2rem] font-[500] font-monts  border-t-[5px] border-primary">
             <ul className="flex flex-col items-center gap-4 text-black mb-[20px]">
               <NavItem href="/">
                 PREVIOUS PROJECTS{" "}
@@ -107,8 +108,10 @@ const Navbar = () => {
             </ul>
 
             <a
+              target="_blank"
+              rel="noreferrer"
               href="https://online.fliphtml5.com/opehn/bgqq/#p=1"
-              className="text-tetiary font-[600] "
+              className="text-tertiary font-[600] "
             >
               GET THE DALMOOORE BRONCHURE!{" "}
             </a>

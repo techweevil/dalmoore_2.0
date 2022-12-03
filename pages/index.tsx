@@ -1,5 +1,4 @@
-import Head from "next/head";
-// import Image from "next/image";
+import CustomHead from "../components/CustomHead";
 import styles from "../styles/Home.module.css";
 import { BsChevronDoubleDown } from "react-icons/bs";
 import Link from "next/link";
@@ -76,11 +75,7 @@ const HomeCard = ({
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Home | Dalmoore</title>
-        <meta name="description" content="Home page for the Dalmoore" />
-        <link rel="icon" href="/favicon.png" />
-      </Head>
+      <CustomHead title={"Home "} />
 
       <main>
         <div className={`${styles.main} flex flex-col h-full`}>
