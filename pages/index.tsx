@@ -3,6 +3,52 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { BsChevronDoubleDown } from "react-icons/bs";
 import Link from "next/link";
+import { IoCheckmarkDoneSharp } from "react-icons/io5";
+import { CgSmartphoneChip } from "react-icons/cg";
+import { GiTakeMyMoney } from "react-icons/gi";
+
+const data = [
+  {
+    id: 1,
+    icon: <IoCheckmarkDoneSharp className="text-[#F9A826]" />,
+    title: "THE FINISH IS IMPORTANT",
+    text: "It's all in the details. Have you ever went to a new development and been shocked by the poor finish? On your behalf, FORTMEADE is on a mission to watch out for every little detail.",
+  },
+  {
+    id: 2,
+    icon: <CgSmartphoneChip className="text-[#F9A826]" />,
+    title: "EFFICIENT LIVING",
+    text: "Utilizing space and resources effectively is essential for smart houses. We therefore make a special effort to ensure that our floor layouts function effectively in actual use in addition to looking excellent on paper.",
+  },
+  {
+    id: 3,
+    icon: <GiTakeMyMoney className="text-[#F9A826]" />,
+    title: "VALUE FOR MONEY",
+    text: "We prioritize satisfied clients over immediate profit maximization. We provide payment plans and reasonable pricing to assist you in financing your dream house!",
+  },
+];
+
+const HomeCard = ({
+  icon,
+  title,
+  text,
+}: {
+  icon: any;
+  title: string;
+  text: string;
+}) => {
+  return (
+    <div className="text-center flex flex-col gap-2 items-center ">
+      <div className="text-[6em]">{icon}</div>
+      <h2 className="md:text-[25px] text-[18px] font-default font-[500]">
+        {title}
+      </h2>
+      <p className="font-monts font-[500] md:text-[18px] leading-[2em]">
+        {text}{" "}
+      </p>
+    </div>
+  );
+};
 
 export default function Home() {
   return (
@@ -19,7 +65,7 @@ export default function Home() {
             <div className="h-full flex flex-col justify-between">
               <div></div>
               <div className="font-monts text-center ">
-                <h1 className=" font-default md:text-[40px] text-[36px] font-[500] ">
+                <h1 className=" font-default md:text-[50px] text-[36px] font-[500] ">
                   AN IMPROVED WAY OF LIFE
                 </h1>
                 <div className="font-[500] ">
@@ -40,7 +86,37 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="w-full h-screen"></div>
+        <div className="w-full dark:bg-black dark:text-white bg-white text-gray-800 md:py-[5em] py-[3em] text-center">
+          <div className="m-auto  ">
+            <div className="lg:w-[50%] md:w-[70%] w-[90%] m-auto">
+              <h1 className=" font-default md:text-[50px] text-[36px] font-[500] ">
+                DON’T SETTLE FOR LESS. DEMAND QUALITY, RELIABILITY AND
+                AFFORDABILITY. IT’S POSSIBLE.
+              </h1>
+              <p className="text-[18px] font-monts font-[500] my-[1em] leading-[2em]">
+                FORTMEADE was established for the straightforward reason that it
+                was difficult to obtain well-designed, fairly priced apartments
+                in Lagos. We made the decision to apply our knowledge of the
+                Nordic housing industry to create homes that meet the same needs
+                as Nordic buyers, including dependability, efficient use of
+                space, and attention to schedules.
+              </p>
+            </div>
+
+            <div className="md:w-[80%] w-[90%] m-auto mt-[4em]">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-[2em]">
+                {data.map((item) => (
+                  <HomeCard
+                    key={item.id}
+                    icon={item.icon}
+                    title={item.title}
+                    text={item.text}
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
     </div>
   );

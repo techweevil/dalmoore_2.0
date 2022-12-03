@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import logo from "../../public/images/logo.png";
+import logo_2 from "../../public/logo_2.png";
 import Link from "next/link";
 import { FaChevronDown } from "react-icons/fa";
 import { FiMenu } from "react-icons/fi";
@@ -37,11 +38,19 @@ const Navbar = () => {
 
   return (
     <div className="bg-white w-full md:p-4 px-8 py-[10px] flex justify-between items-center md:px-[5rem]">
-    {navheight === false &&   <Image
-        src={logo}
-        alt="dalmoore logo"
-        className={`md:w-[10em] w-[7em] ${navheight && "w-[5em] "} `}
-      />}
+      {navheight === false ? (
+        <Image
+          src={logo}
+          alt="dalmoore logo"
+          className={`md:w-[10em] w-[7em]`}
+        />
+      ) : (
+        <Image
+          src={logo_2}
+          alt="dalmoore logo"
+          className={`md:w-[10em] w-[7em] `}
+        />
+      )}
 
       <div className="md:hidden text-black inline text-[1.6em] font-[700]">
         <motion.button
