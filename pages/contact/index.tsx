@@ -4,7 +4,7 @@ import CustomHead from "../../components/CustomHead";
 const index = () => {
   return (
     <div className="w-full ">
-      {/* <CustomHead title="Contact" /> */}
+      <CustomHead title="Contact" />
 
       <div className="p-[2em] w-full py-[5em] gap-4 lg:w-[50%] md:w-[70%] m-auto font-[500] text-center ">
         <h1 className="font-default text-[40px] font-[600] my-[1em] ">

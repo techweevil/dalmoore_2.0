@@ -3,8 +3,8 @@ import NextHead from "next/head";
 
 const CustomHead = ({ title }: any) => (
   <NextHead>
+    <title>{title} | FORTMEADE </title>
     <meta charSet="UTF-8" />
-    <title>{title} </title>
     <meta name="description" content={`${title} page for the Dalmoore`} />
     <link rel="icon" href="/favicon.png" />
     <meta
