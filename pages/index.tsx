@@ -1,6 +1,8 @@
 import Head from "next/head";
 // import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import { BsChevronDoubleDown } from "react-icons/bs";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -8,10 +10,38 @@ export default function Home() {
       <Head>
         <title>Home | Dalmoore</title>
         <meta name="description" content="Home page for the Dalmoore" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
-      <main></main>
+      <main>
+        <div className={`${styles.main} flex flex-col h-full`}>
+          <div className="h-full w-full flex-1 backdrop-saturate-50 bg-black/50 flex justify-center items-center text-white">
+            <div className="h-full flex flex-col justify-between">
+              <div></div>
+              <div className="font-monts text-center ">
+                <h1 className=" font-default md:text-[40px] text-[36px] font-[500] ">
+                  AN IMPROVED WAY OF LIFE
+                </h1>
+                <div className="font-[500] ">
+                  <p className="leading-10">THE DALMOORE II</p>
+                  <p className="tracking-wide">
+                    where functionality meets luxury...
+                  </p>
+                </div>
+                <Link href={"/contact"}>
+                  <button className="py-[8px] px-[15px] font-default text-[18px] mt-[30px] font-[500] bg-primary">
+                    LEARN MORE
+                  </button>
+                </Link>
+              </div>
+              <div className="text-center w-full text-[3em] font-[900] flex justify-center relative md:top-[3em] top-[4em] ">
+                <BsChevronDoubleDown />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="w-full h-screen"></div>
+      </main>
     </div>
   );
 }

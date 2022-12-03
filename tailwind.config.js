@@ -7,8 +7,14 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        default: ["Oswald", "Helvetica", "Arial", "Lucida", "sans-serif"],
+        default: ['"Oswald"', "Helvetica", "Arial", "Lucida", "sans-serif"],
         monts: ['"Montserrat"', " sans-serif"],
+      },
+
+      colors: {
+        primary: "#0d6743",
+        secondary: "#fff311",
+        tertiary: "#f03058",
       },
     },
   },
