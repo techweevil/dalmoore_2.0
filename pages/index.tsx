@@ -6,6 +6,9 @@ import Link from "next/link";
 import { IoCheckmarkDoneSharp } from "react-icons/io5";
 import { CgSmartphoneChip } from "react-icons/cg";
 import { GiTakeMyMoney } from "react-icons/gi";
+import { BiTimer } from "react-icons/bi";
+import { GiPayMoney } from "react-icons/gi";
+import { MdMoneyOffCsred } from "react-icons/md";
 
 const data = [
   {
@@ -25,6 +28,26 @@ const data = [
     icon: <GiTakeMyMoney className="text-[#F9A826]" />,
     title: "VALUE FOR MONEY",
     text: "We prioritize satisfied clients over immediate profit maximization. We provide payment plans and reasonable pricing to assist you in financing your dream house!",
+  },
+];
+const data_2 = [
+  {
+    id: 1,
+    icon: <BiTimer className="text-[#F9A826]" />,
+    title: "TIMELY DELIVERY",
+    text: "Our Nordic DNA is ingrained with the desire to finish our residences on time. Even so, there are occasions when things don't go as expected, but since you're working with Nigeria's most trustworthy real estate firm, you already know that.",
+  },
+  {
+    id: 2,
+    icon: <GiPayMoney className="text-[#F9A826]" />,
+    title: "GOOD INVESTMENT",
+    text: "We consider quality homes to be wise investments. We choose the locations for our initiatives based on their potential long-term worth. Our apartments are reasonably priced, which guarantees significant returns on your investment.",
+  },
+  {
+    id: 3,
+    icon: <MdMoneyOffCsred className="text-[#F9A826]" />,
+    title: "NO HIDDEN FEES",
+    text: "Even when it comes to price, we make every effort to be as open as possible. To avoid any unpleasant surprises, you can find all of our apartment prices and associated charges on our website.",
   },
 ];
 
@@ -106,6 +129,30 @@ export default function Home() {
             <div className="md:w-[80%] w-[90%] m-auto mt-[4em]">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-[2em]">
                 {data.map((item) => (
+                  <HomeCard
+                    key={item.id}
+                    icon={item.icon}
+                    title={item.title}
+                    text={item.text}
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* SECOND SECTION  */}
+        <div className="w-full dark:bg-white dark:text-gray-800 bg-black text-white md:py-[5em] py-[3em] text-center">
+          <div className="m-auto  ">
+            <div className="lg:w-[50%] md:w-[70%] w-[90%] m-auto">
+              <h1 className=" font-default md:text-[50px] text-[36px] font-[500] ">
+                BENEFITS OF BUYING APARTMENTS IN LAGOS FROM FORTMEADE
+              </h1>
+            </div>
+
+            <div className="md:w-[80%] w-[90%] m-auto mt-[4em]">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-[2em]">
+                {data_2.map((item) => (
                   <HomeCard
                     key={item.id}
                     icon={item.icon}
