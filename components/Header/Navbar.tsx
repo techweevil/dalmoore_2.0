@@ -74,7 +74,7 @@ const Navbar = () => {
             PREVIOUS PROJECTS{" "}
             <FaChevronDown className="group-hover:rotate-180 " />
           </NavItem>
-          <NavItem href="/">CONTACT</NavItem>
+          <NavItem href="/contact">CONTACT</NavItem>
           <NavItem href="/">TEAM</NavItem>
           <NavItem href="/">DIASPORA</NavItem>
         </ul>
@@ -102,7 +102,7 @@ const Navbar = () => {
                 PREVIOUS PROJECTS{" "}
                 <FaChevronDown className="group-hover:rotate-180 " />
               </NavItem>
-              <NavItem href="/">CONTACT</NavItem>
+              <NavItem href="/contact">CONTACT</NavItem>
               <NavItem href="/">TEAM</NavItem>
               <NavItem href="/">DIASPORA</NavItem>
             </ul>
