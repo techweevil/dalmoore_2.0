@@ -8,9 +8,69 @@ import { FiMenu } from "react-icons/fi";
 import { CgClose } from "react-icons/cg";
 import { motion } from "framer-motion";
 
-const NavItem = ({ href, children }: { href: string; children: any }) => {
-  return (
-    <li className="nav-item hover:font-[600] hover:bg-black md:w-auto w-full py-[10px] flex justify-center   hover:text-white">
+const dal2_data: any = [
+  {
+    title: "APARTMENTS",
+    href: "/",
+  },
+  {
+    title: "GALLERY",
+    href: "/",
+  },
+  {
+    title: "LOCATION",
+    href: "/",
+  },
+  {
+    title: "UPDATE",
+    href: "/",
+  },
+];
+
+const prev_projs: any = [
+  {
+    title: "DALMORE I",
+    href: "/",
+  },
+  {
+    title: "DALMORE III",
+    href: "/",
+  },
+];
+
+const NavItem = ({
+  href,
+  children,
+  drop,
+  data,
+}: {
+  href: string;
+  children: any;
+  drop?: boolean;
+  data?: any;
+}) => {
+  return drop ? (
+    <li className="nav-item hover:font-[600]  md:w-auto w-full py-[10px] flex justify-center hover:text-primary  hover:text-white relative peer group">
+      <Link
+        className="nav-icon flex gap-x-1 text-start items-center  "
+        href={href}
+      >
+        <span> {children}</span>
+        <FaChevronDown className="group-hover:rotate-180" />
+      </Link>
+
+      <ul className="hidden group-hover:flex peer-hover:inline hover:flex absolute backdrop-invert-0 bg-black/60 text-white w-full top-[3em] text-center flex-col py-[1em]  w-[10rem] ">
+        {data?.map((item: any) => (
+          <NavItem href={item.href} key={item.title}>
+            {item.title}
+          </NavItem>
+        ))}
+      </ul>
+    </li>
+  ) : (
+    <li
+      className={`nav-item hover:font-[600] hover:bg-black md:w-auto w-full py-[10px] flex justify-center   hover:text-white`}
+    >
       <Link
         className="nav-icon flex gap-x-2 text-start items-center group "
         href={href}
@@ -68,15 +128,17 @@ const Navbar = () => {
         </motion.button>
       </div>
 
+      {/* web  */}
       <div className="md:flex lg:flex-row flex-col gap-x-4 lg:items-center items-end font-monts text-[14px] font-[500] hidden">
         <ul className="flex items-center gap-4 text-black ">
-          <NavItem href="/">
+          <NavItem drop={true} data={dal2_data} href="/">
+            DALMOORE II
+          </NavItem>
+          <NavItem drop={true} data={prev_projs} href="/">
             PREVIOUS PROJECTS{" "}
-            <FaChevronDown className="group-hover:rotate-180 " />
           </NavItem>
           <NavItem href="/contact">CONTACT</NavItem>
           <NavItem href="/">TEAM</NavItem>
-          <NavItem href="/">DIASPORA</NavItem>
         </ul>
 
         <a
@@ -98,13 +160,14 @@ const Navbar = () => {
         >
           <div className="w-[80%] m-auto bg-white py-[2rem] font-[500] font-monts  border-t-[5px] border-primary">
             <ul className="flex flex-col items-center gap-4 text-black mb-[20px]">
-              <NavItem href="/">
+              <NavItem drop={true} data={dal2_data} href="/">
+                DALMOORE II
+              </NavItem>
+              <NavItem drop={true} data={prev_projs} href="/">
                 PREVIOUS PROJECTS{" "}
-                <FaChevronDown className="group-hover:rotate-180 " />
               </NavItem>
               <NavItem href="/contact">CONTACT</NavItem>
               <NavItem href="/">TEAM</NavItem>
-              <NavItem href="/">DIASPORA</NavItem>
             </ul>
 
             <a

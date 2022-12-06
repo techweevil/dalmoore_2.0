@@ -98,7 +98,7 @@ export default function Home() {
                   </button>
                 </Link>
               </div>
-              <div className="text-center w-full text-[3em] font-[900] flex justify-center relative md:top-[3em] top-[4em] ">
+              <div className="text-center w-full text-[3em] font-[900] flex justify-center relative md:top-[2em] top-[4em] ">
                 <BsChevronDoubleDown />
               </div>
             </div>
