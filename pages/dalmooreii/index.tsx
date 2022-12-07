@@ -7,6 +7,25 @@ import left_side from "../../public/images/left_side.jpg";
 import right_side from "../../public/images/right_side.jpg";
 import { Form } from "../contact";
 
+export const InPageContact = () => {
+  return (
+    <div className="flex flex-col items-center px-[1rem] py-[2rem] font-monts">
+      <div className="mb-[1rem] ">
+        <p className="font-[600] ">
+          CONTACT US FOR MORE INFORMATION ON THE APARTMENTS AND HOW TO BUY!
+        </p>
+        <p>
+          You can call or Whatsapp us at +(234) demo-number 1 or send us an
+          email to demo-email
+        </p>
+      </div>
+      <div className="w-full ">
+        <Form />
+      </div>
+    </div>
+  );
+};
+
 const index = () => {
   return (
     <div>
@@ -129,21 +148,7 @@ const index = () => {
             </div>
           </div>
         </div>
-
-        <div className="flex flex-col items-center px-[1rem] py-[2rem] font-monts">
-          <div className="mb-[1rem] ">
-            <p className="font-[600] ">
-              CONTACT US FOR MORE INFORMATION ON THE APARTMENTS AND HOW TO BUY!
-            </p>
-            <p>
-              You can call or Whatsapp us at +(234) demo-number 1 or send us an
-              email to demo-email
-            </p>
-          </div>
-          <div className="w-full ">
-            <Form />
-          </div>
-        </div>
+        <InPageContact />
       </main>
     </div>
   );
