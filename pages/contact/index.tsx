@@ -1,6 +1,48 @@
 import React from "react";
 import CustomHead from "../../components/CustomHead";
 
+export const Form = () => {
+  return (
+    <div className="p-[2em]">
+      <form className="w-full md:w-[50%] m-auto">
+        <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-2">
+            <label htmlFor="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              className="border-[1px] border-b-gray-300 border-b-[2px]  rounded-md p-[10px] focus:outline-none focus:border-b-primary"
+            />
+
+            <label htmlFor="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              className="border-[1px] border-b-gray-300 border-b-[2px]  rounded-md p-[10px] focus:outline-none focus:border-b-primary"
+            />
+
+            <label htmlFor="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              rows={5}
+              className="border-[1px] border-b-gray-300 rounded-md p-[10px] focus:outline-none focus:border-b-primary border-b-[2px]"
+            ></textarea>
+
+            <div className="w-full flex items-end justify-end">
+              <button className="py-[8px] px-[15px] font-default text-[18px] mt-[10px] font-[500] bg-white text-primary rounded-full p-[2em] border-primary border-[5px] w-fit text-right">
+                SEND
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  );
+};
+
 const index = () => {
   return (
     <div className="w-full ">
@@ -27,43 +69,7 @@ const index = () => {
         </div>
       </div>
 
-      <div className="p-[2em]">
-        <form className="w-full md:w-[50%] m-auto">
-          <div className="flex flex-col gap-4">
-            <div className="flex flex-col gap-2">
-              <label htmlFor="name">Name</label>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                className="border-[1px] border-b-gray-300 border-b-[2px]  rounded-md p-[10px] focus:outline-none focus:border-b-primary"
-              />
-
-              <label htmlFor="email">Email</label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                className="border-[1px] border-b-gray-300 border-b-[2px]  rounded-md p-[10px] focus:outline-none focus:border-b-primary"
-              />
-
-              <label htmlFor="message">Message</label>
-              <textarea
-                name="message"
-                id="message"
-                rows={5}
-                className="border-[1px] border-b-gray-300 rounded-md p-[10px] focus:outline-none focus:border-b-primary border-b-[2px]"
-              ></textarea>
-
-              <div className="w-full flex items-end justify-end">
-                <button className="py-[8px] px-[15px] font-default text-[18px] mt-[10px] font-[500] bg-white text-primary rounded-full p-[2em] border-primary border-[5px] w-fit text-right">
-                  SEND
-                </button>
-              </div>
-            </div>
-          </div>
-        </form>
-      </div>
+      <Form />
     </div>
   );
 };

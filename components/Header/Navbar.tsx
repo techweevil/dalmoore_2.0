@@ -50,7 +50,7 @@ const NavItem = ({
   data?: any;
 }) => {
   return drop ? (
-    <li className="nav-item hover:font-[600]  md:w-auto w-full py-[10px] flex justify-center hover:text-primary  hover:text-white relative peer group">
+    <li className="nav-item hover:font-[600]  md:w-auto w-full py-[10px] flex justify-center hover:text-primary  relative peer group">
       <Link
         className="nav-icon flex gap-x-1 text-start items-center  "
         href={href}
@@ -59,7 +59,7 @@ const NavItem = ({
         <FaChevronDown className="group-hover:rotate-180" />
       </Link>
 
-      <ul className="hidden group-hover:flex peer-hover:inline hover:flex absolute backdrop-invert-0 bg-black/60 text-white w-full top-[3em] text-center flex-col py-[1em]  w-[10rem] ">
+      <ul className="hidden group-hover:flex peer-hover:inline hover:flex absolute backdrop-invert-0 bg-black/60 text-white top-[3em] text-center flex-col py-[1em]  w-[10rem] ">
         {data?.map((item: any) => (
           <NavItem href={item.href} key={item.title}>
             {item.title}
@@ -131,7 +131,7 @@ const Navbar = () => {
       {/* web  */}
       <div className="md:flex lg:flex-row flex-col gap-x-4 lg:items-center items-end font-monts text-[14px] font-[500] hidden">
         <ul className="flex items-center gap-4 text-black ">
-          <NavItem drop={true} data={dal2_data} href="/">
+          <NavItem drop={true} data={dal2_data} href="dalmooreii">
             DALMOORE II
           </NavItem>
           <NavItem drop={true} data={prev_projs} href="/">
@@ -160,7 +160,7 @@ const Navbar = () => {
         >
           <div className="w-[80%] m-auto bg-white py-[2rem] font-[500] font-monts  border-t-[5px] border-primary">
             <ul className="flex flex-col items-center gap-4 text-black mb-[20px]">
-              <NavItem drop={true} data={dal2_data} href="/">
+              <NavItem drop={true} data={dal2_data} href="dalmooreii">
                 DALMOORE II
               </NavItem>
               <NavItem drop={true} data={prev_projs} href="/">
@@ -176,7 +176,7 @@ const Navbar = () => {
               href="https://online.fliphtml5.com/opehn/bgqq/#p=1"
               className="text-tertiary font-[600] "
             >
-              GET THE DALMOOORE BRONCHURE!{" "}
+              GET THE DALMOORE BRONCHURE!{" "}
             </a>
           </div>
         </motion.div>
