@@ -130,7 +130,7 @@ const index = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center py-[2rem] font-monts">
+        <div className="flex flex-col items-center px-[1rem] py-[2rem] font-monts">
           <div className="mb-[1rem] ">
             <p className="font-[600] ">
               CONTACT US FOR MORE INFORMATION ON THE APARTMENTS AND HOW TO BUY!
