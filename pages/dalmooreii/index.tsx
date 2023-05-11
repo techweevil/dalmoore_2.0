@@ -40,7 +40,7 @@ const index = () => {
               <div></div>
               <div className="font-monts text-center ">
                 <h1 className="  md:text-[60px] text-[40px] font-[600] ">
-                  THE DALMOORE II
+                  THE El’Terreno Projects Limited
                   <br /> APARTMENTS
                 </h1>
               </div>
@@ -49,7 +49,11 @@ const index = () => {
         </div>
         <div className="flex flex-col items-center my-[4rem]">
           <div className="flex flex-col gap-2 items-center mb-[2rem]">
-            <Image width={200} src={logo} alt="fortmeade logo" />
+            <Image
+              width={200}
+              src={logo}
+              alt="El’Terreno Projects Limited logo"
+            />
             <p className="font-monts text-[20px] ">DALMOOORE II </p>
           </div>
 

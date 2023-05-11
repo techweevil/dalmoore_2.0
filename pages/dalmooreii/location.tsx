@@ -10,7 +10,7 @@ const location = () => {
       <CustomHead title={"location"} />
       <div>
         <h1 className="md:text-[60px] text-[40px] text-center">
-          DALMOORE II <br /> LOCATION{" "}
+          El’Terreno Projects Limited <br /> LOCATION{" "}
         </h1>
 
         <Image src={location_img} alt={"location image"} />

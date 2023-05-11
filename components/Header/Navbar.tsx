@@ -137,7 +137,7 @@ const Navbar = () => {
         <div className="md:flex lg:flex-row flex-col gap-x-4 lg:items-center items-end font-monts text-[14px] font-[500] hidden">
           <ul className="flex items-center gap-4 text-black ">
             <NavItem drop={true} data={dal2_data} href="dalmooreii">
-              DALMOORE II
+              El’Terreno Projects Limited
             </NavItem>
             <NavItem drop={true} data={prev_projs} href="/">
               PREVIOUS PROJECTS{" "}
@@ -166,7 +166,7 @@ const Navbar = () => {
             <div className="w-[80%] m-auto bg-white py-[2rem] font-[500] font-monts  border-t-[5px] border-primary">
               <ul className="flex flex-col items-center gap-4 text-black mb-[20px]">
                 <NavItem drop={true} data={dal2_data} href="dalmooreii">
-                  DALMOORE II
+                  El’Terreno Projects Limited
                 </NavItem>
                 <NavItem drop={true} data={prev_projs} href="/">
                   PREVIOUS PROJECTS{" "}
@@ -181,7 +181,7 @@ const Navbar = () => {
                 href="https://online.fliphtml5.com/opehn/bgqq/#p=1"
                 className="text-tertiary font-[600] "
               >
-                GET THE DALMOORE BRONCHURE!{" "}
+                GET THE El’Terreno BRONCHURE!{" "}
               </a>
             </div>
           </motion.div>

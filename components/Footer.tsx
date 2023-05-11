@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="flex-1">
           <div className="md:w-[60%] w-full">
             <h1 className="font-default md:text-[40px] text-[32px] font-[500] leading-[2em] ">
-              ABOUT FORTMEADE
+              ABOUT El’Terreno Projects Limited
             </h1>
             <p className="leading-[1.8em]  ">
               <span>
@@ -48,7 +48,7 @@ const Footer = () => {
       </div>
 
       <div className="w-full bg-gray-700 p-[.6rem] text-center font[700] text-white  ">
-        <p>Copyright Fortmeade 2022</p>
+        <p>Copyright El’Terreno Projects Limited 2022</p>
       </div>
     </div>
   );

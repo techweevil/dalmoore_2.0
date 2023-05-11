@@ -14,7 +14,7 @@ const data = [
     id: 1,
     icon: <IoCheckmarkDoneSharp className="text-[#F9A826]" />,
     title: "THE FINISH IS IMPORTANT",
-    text: "It's all in the details. Have you ever went to a new development and been shocked by the poor finish? On your behalf, FORTMEADE is on a mission to watch out for every little detail.",
+    text: "It's all in the details. Have you ever went to a new development and been shocked by the poor finish? On your behalf, El’Terreno Projects Limited is on a mission to watch out for every little detail.",
   },
   {
     id: 2,
@@ -87,7 +87,7 @@ export default function Home() {
                   AN IMPROVED WAY OF LIFE
                 </h1>
                 <div className="font-[500] ">
-                  <p className="leading-10">THE DALMOORE II</p>
+                  <p className="leading-10">THE El’Terreno Projects Limited</p>
                   <p className="tracking-wide">
                     where functionality meets luxury...
                   </p>
@@ -112,12 +112,13 @@ export default function Home() {
                 AFFORDABILITY. IT’S POSSIBLE.
               </h1>
               <p className="text-[18px] font-monts font-[500] my-[1em] leading-[2em]">
-                FORTMEADE was established for the straightforward reason that it
-                was difficult to obtain well-designed, fairly priced apartments
-                in Lagos. We made the decision to apply our knowledge of the
-                Nordic housing industry to create homes that meet the same needs
-                as Nordic buyers, including dependability, efficient use of
-                space, and attention to schedules.
+                El’Terreno Projects Limited was established for the
+                straightforward reason that it was difficult to obtain
+                well-designed, fairly priced apartments in Lagos. We made the
+                decision to apply our knowledge of the Nordic housing industry
+                to create homes that meet the same needs as Nordic buyers,
+                including dependability, efficient use of space, and attention
+                to schedules.
               </p>
             </div>
 
@@ -141,7 +142,8 @@ export default function Home() {
           <div className="m-auto  ">
             <div className="lg:w-[50%] md:w-[70%] w-[90%] m-auto">
               <h1 className=" font-default md:text-[50px] text-[36px] font-[500] ">
-                BENEFITS OF BUYING APARTMENTS IN LAGOS FROM FORTMEADE
+                BENEFITS OF BUYING APARTMENTS IN LAGOS FROM El’Terreno Projects
+                Limited
               </h1>
             </div>
 
